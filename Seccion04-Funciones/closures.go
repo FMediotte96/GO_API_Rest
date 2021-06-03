@@ -10,6 +10,10 @@ func main() {
 
 	fmt.Print("Pedido 2 -->")
 	fmt.Println(gorras(24, "usd"))
+
+	//Parametros
+	fmt.Println("-------Parametros-------")
+	pantalon("Rojo", "largo", "sin bolsillos", "Nike")
 }
 
 /*
@@ -24,4 +28,11 @@ func gorras(pedido float32, moneda string) (string, float32, string) {
 	}
 
 	return "El precio del pedido es:", precio(), moneda
+}
+
+//De esta manera indica que puede recibir una serie de parametros
+func pantalon(caracteristicas ...string) {
+	for _, carac := range caracteristicas {
+		fmt.Println(carac)
+	}
 }

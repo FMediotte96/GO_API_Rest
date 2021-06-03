@@ -1,0 +1,6 @@
+godoc => nos muestra la documentación de lo que solicitemos al comando.
+        Ej: go doc time
+
+go fmt => formatea nuestro código
+
+go build => nos permite compilar y generar un ejecutable de nuestro programa
